@@ -1,0 +1,80 @@
+html,body {
+  background-color: black;
+  color: lightgray;
+  font-family: sans-serif;
+  margin: 0;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(225,225,225);
+}
+
+.red {
+  color: red;
+}
+
+.food {
+  color: yellowgreen;
+}
+.wood {
+  color: peru;
+}
+.stone {
+  color: lightslategray;
+}
+.iron {
+  color: rosybrown;
+}
+.gold {
+  color: orange;
+}
+
+.button {
+  border: 1px solid lightgray;
+  color: lightgray;
+  text-decoration: none;
+  padding: 5px;
+}
+.button:hover {
+  opacity: .75;
+  cursor: pointer;
+}
+
+.resources, .builds, .actions {
+  display: table;
+  height: 50px;
+}
+
+.row {
+  display: table-cell;
+  text-align: center;
+  width: 20vw;
+}
+
+.owned {
+  display: inline;
+  margin-left: 5px;
+}
+
+#console {
+  margin: 10px;
+  height: 97vh;
+  width: 15vw;
+  border: 1px solid lightgray;
+  padding: 0 20px 0 20px;
+  float: left;
+  overflow-y: auto;
+}
+
+#output {
+  float: left;
+}

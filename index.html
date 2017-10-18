@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Incremental Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+
+    <div class="game">
+
+
+      <!-- console -->
+      <div id="console">
+        <p id="output"></p>
+      </div>
+
+
+      <!-- RESOURCES -->
+      <div class="resources">
+        <div class="food resource row">
+          <p id="food">Food: 0</p>
+        </div>
+        <div class="wood resource row">
+          <p id="wood">Wood: 0</p>
+        </div>
+        <div class="stone resource row">
+          <p id="stone">Stone: 0</p>
+        </div>
+        <div class="iron resource row">
+          <p id="iron">Iron: 0</p>
+        </div>
+        <div class="gold resource row">
+          <p id="gold">Gold: 0</p>
+        </div>
+      </div>
+
+      <!-- BUILDS -->
+      <div class="builds">
+        <div class="build row">
+          <a id="buildFood" class="button" onclick="buildFood()">Build Farm</a>
+          <p id="ownedFarm" class="owned">Owned: 0</p>
+        </div>
+        <div class="build row">
+          <a id="buildLumber" " class="button" onclick="buildLumber()">Build Lumber Mill</a>
+          <p id="ownedLumber" class="owned">Owned: 0</p>
+        </div>
+        <div class="build row">
+          <a id="buildStone" " class="button" onclick="buildStone()">Build Stone Quarry</a>
+          <p id="ownedStone" class="owned">Owned: 0</p>
+        </div>
+        <div class="build row">
+          <a id="buildIron" " class="button" onclick="buildIron()">Build Iron Mine</a>
+          <p id="ownedIron" class="owned">Owned: 0</p>
+        </div>
+        <div class="build row">
+          <a id="buildGold" " class="button" onclick="buildGold()">Build Gold Mine</a>
+          <p id="ownedGold" class="owned">Owned: 0</p>
+        </div>
+      </div>
+
+      <!-- ACTIONS -->
+      <div class="actions">
+        <div class="action row">
+          <a id="chopTree" " class="button" onclick="chopTree()">Chop Tree</a>
+        </div>
+      </div>
+
+
+      <!-- PEOPLE -->
+      <div class="people">
+        <div class="person row">
+          <a id="villager" " class="button" onclick="hireVillager()">Hire Villager</a>
+        </div>
+      </div>
+
+
+    </div>
+
+  </body>
+</html>
